@@ -1,0 +1,22 @@
+{
+  "mobilenetv3_external_float32.tflite": {
+    "original_test": {
+      "accuracy": 0.995987963891675,
+      "macro_f1": 0.9912136865500352
+    },
+    "external_test": {
+      "accuracy": 0.9127906976744186,
+      "macro_f1": 0.9101724688597891
+    }
+  },
+  "mobilenetv3_external_dynamic.tflite": {
+    "original_test": {
+      "accuracy": 0.9909729187562688,
+      "macro_f1": 0.9782858494106169
+    },
+    "external_test": {
+      "accuracy": 0.8837209302325582,
+      "macro_f1": 0.8788759689922481
+    }
+  }
+}

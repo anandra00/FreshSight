@@ -1,0 +1,17 @@
+file,true,base_pred,base_conf,auto_pred,auto_conf,base_ok,auto_ok,bbox,source
+fresh_apple__0__Red_Apple.jpg,fresh_apple,fresh_apple,0.9270163178443909,fresh_apple,0.9588015079498291,True,True,"(24, 23, 468, 453)",https://commons.wikimedia.org/wiki/File:Red_Apple.jpg
+fresh_apple__1__Apple.jpg,fresh_apple,fresh_apple,0.5109463334083557,fresh_apple,0.5112832188606262,True,True,"(42, 0, 500, 333)",https://commons.wikimedia.org/wiki/File:Apple.jpg
+fresh_banana__0__Banana-Single.jpg,fresh_banana,fresh_banana,0.982807993888855,fresh_banana,0.982807993888855,True,True,"(0, 0, 500, 441)",https://commons.wikimedia.org/wiki/File:Banana-Single.jpg
+fresh_banana__1__Banana_isolated_on_white.jpg,fresh_banana,fresh_banana,0.9991723299026489,fresh_banana,0.9970998764038086,True,True,"(26, 85, 484, 312)",https://commons.wikimedia.org/wiki/File:Banana_isolated_on_white.jpg
+fresh_orange__0__Orange-Fruit-Pieces.jpg,fresh_orange,fresh_orange,0.9551465511322021,fresh_orange,0.9551465511322021,True,True,"(0, 0, 500, 321)",https://commons.wikimedia.org/wiki/File:Orange-Fruit-Pieces.jpg
+fresh_orange__1__Ambersweet_oranges.jpg,fresh_orange,fresh_orange,0.9858828186988831,fresh_orange,0.9613878726959229,True,True,"(0, 8, 444, 475)",https://commons.wikimedia.org/wiki/File:Ambersweet_oranges.jpg
+fresh_orange__2__Oranges_-_whole-halved-segment.jpg,fresh_orange,fresh_orange,0.9852243661880493,fresh_orange,0.982488751411438,True,True,"(0, 0, 500, 321)",https://commons.wikimedia.org/wiki/File:Oranges_-_whole-halved-segment.jpg
+rotten_apple__0__Rotten_Apple_01.jpg,rotten_apple,fresh_banana,0.9386683702468872,fresh_banana,0.8584749102592468,False,False,"(0, 61, 489, 500)",https://commons.wikimedia.org/wiki/File:Rotten_Apple_01.jpg
+rotten_apple__1__Rotten_Apple_02.jpg,rotten_apple,rotten_apple,0.9821329712867737,rotten_apple,0.9973194003105164,True,True,"(52, 81, 423, 442)",https://commons.wikimedia.org/wiki/File:Rotten_Apple_02.jpg
+rotten_apple__2__Rotten_Apple_03.jpg,rotten_apple,rotten_apple,0.9455721378326416,rotten_apple,0.9831425547599792,True,True,"(67, 43, 421, 423)",https://commons.wikimedia.org/wiki/File:Rotten_Apple_03.jpg
+rotten_banana__0__Extremely_overripe_banana.jpg,rotten_banana,fresh_banana,0.6291903853416443,rotten_banana,0.9258070588111877,False,True,"(22, 177, 400, 500)",https://commons.wikimedia.org/wiki/File:Extremely_overripe_banana.jpg
+rotten_banana__1__Overripe_banana_20211221_152406.jpg,rotten_banana,fresh_banana,0.9286825060844421,fresh_banana,0.8334413766860962,False,False,"(0, 47, 500, 265)",https://commons.wikimedia.org/wiki/File:Overripe_banana_20211221_152406.jpg
+rotten_banana__2__Overripe_kitchen_bananas.jpg,rotten_banana,rotten_banana,0.9340987205505371,rotten_banana,0.9398157000541687,True,True,"(96, 17, 500, 329)",https://commons.wikimedia.org/wiki/File:Overripe_kitchen_bananas.jpg
+rotten_orange__0__Moldy_orange_in_lake.jpg,rotten_orange,rotten_orange,0.986443042755127,rotten_orange,0.9787901043891907,True,True,"(65, 38, 363, 334)",https://commons.wikimedia.org/wiki/File:Moldy_orange_in_lake.jpg
+rotten_orange__1__Still_Life_Photography_Rotten_Orange.jpg,rotten_orange,rotten_orange,0.5012069940567017,rotten_orange,0.6832904815673828,True,True,"(0, 0, 379, 333)",https://commons.wikimedia.org/wiki/File:Still_Life_Photography_Rotten_Orange.jpg
+rotten_orange__2__Rotten_Oranges.JPG,rotten_orange,fresh_orange,0.5105121731758118,rotten_orange,0.521428108215332,False,True,"(85, 21, 478, 375)",https://commons.wikimedia.org/wiki/File:Rotten_Oranges.JPG

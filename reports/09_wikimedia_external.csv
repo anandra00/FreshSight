@@ -1,0 +1,17 @@
+file,true,baseline,baseline_conf,baseline_ok,baseline_auto,baseline_auto_conf,baseline_auto_ok,finetuned,finetuned_conf,finetuned_ok,finetuned_auto,finetuned_auto_conf,finetuned_auto_ok
+fresh_apple__0__Red_Apple.jpg,fresh_apple,fresh_apple,0.9270161390304565,True,fresh_apple,0.9588016271591187,True,fresh_apple,0.9644437432289124,True,fresh_apple,0.9900520443916321,True
+fresh_apple__1__Apple.jpg,fresh_apple,fresh_apple,0.5109452605247498,True,fresh_apple,0.5112817287445068,True,fresh_apple,0.5244064331054688,True,fresh_banana,0.5020854473114014,False
+fresh_banana__0__Banana-Single.jpg,fresh_banana,fresh_banana,0.9828081727027893,True,fresh_banana,0.9828081727027893,True,fresh_banana,0.9776642918586731,True,fresh_banana,0.9776642918586731,True
+fresh_banana__1__Banana_isolated_on_white.jpg,fresh_banana,fresh_banana,0.9991723299026489,True,fresh_banana,0.9970998764038086,True,fresh_banana,0.9989258646965027,True,fresh_banana,0.9976074695587158,True
+fresh_orange__0__Orange-Fruit-Pieces.jpg,fresh_orange,fresh_orange,0.9551465511322021,True,fresh_orange,0.9551465511322021,True,fresh_orange,0.9659116864204407,True,fresh_orange,0.9659116864204407,True
+fresh_orange__1__Ambersweet_oranges.jpg,fresh_orange,fresh_orange,0.9858828186988831,True,fresh_orange,0.9613877534866333,True,fresh_orange,0.9367932677268982,True,fresh_orange,0.9180790781974792,True
+fresh_orange__2__Oranges_-_whole-halved-segment.jpg,fresh_orange,fresh_orange,0.9852243661880493,True,fresh_orange,0.982488751411438,True,fresh_orange,0.9901306629180908,True,fresh_orange,0.9929797053337097,True
+rotten_apple__0__Rotten_Apple_01.jpg,rotten_apple,fresh_banana,0.9386679530143738,False,fresh_banana,0.8584747314453125,False,fresh_banana,0.3943686783313751,False,fresh_banana,0.3312574625015259,False
+rotten_apple__1__Rotten_Apple_02.jpg,rotten_apple,rotten_apple,0.9821330904960632,True,rotten_apple,0.9973194003105164,True,rotten_apple,0.9995972514152527,True,rotten_apple,0.9952285289764404,True
+rotten_apple__2__Rotten_Apple_03.jpg,rotten_apple,rotten_apple,0.9455729722976685,True,rotten_apple,0.9831424355506897,True,rotten_apple,0.9998725652694702,True,rotten_apple,0.9990725517272949,True
+rotten_banana__0__Extremely_overripe_banana.jpg,rotten_banana,fresh_banana,0.6291895508766174,False,rotten_banana,0.9258068203926086,True,rotten_banana,0.9458913207054138,True,rotten_banana,0.989175021648407,True
+rotten_banana__1__Overripe_banana_20211221_152406.jpg,rotten_banana,fresh_banana,0.9286819696426392,False,fresh_banana,0.8334406018257141,False,fresh_banana,0.4669528305530548,False,rotten_banana,0.47249844670295715,True
+rotten_banana__2__Overripe_kitchen_bananas.jpg,rotten_banana,rotten_banana,0.934099555015564,True,rotten_banana,0.9398161172866821,True,rotten_banana,0.890294075012207,True,rotten_banana,0.9058138728141785,True
+rotten_orange__0__Moldy_orange_in_lake.jpg,rotten_orange,rotten_orange,0.986443042755127,True,rotten_orange,0.9787902235984802,True,rotten_orange,0.7505776286125183,True,rotten_orange,0.9530429840087891,True
+rotten_orange__1__Still_Life_Photography_Rotten_Orange.jpg,rotten_orange,rotten_orange,0.5012072920799255,True,rotten_orange,0.6832916736602783,True,rotten_apple,0.556217610836029,False,rotten_apple,0.8469778895378113,False
+rotten_orange__2__Rotten_Oranges.JPG,rotten_orange,fresh_orange,0.5105109810829163,False,rotten_orange,0.521429181098938,True,rotten_banana,0.3739651143550873,False,rotten_apple,0.6242169141769409,False

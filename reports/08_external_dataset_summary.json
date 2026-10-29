@@ -1,0 +1,34 @@
+{
+  "original_train": 4871,
+  "original_val": 1109,
+  "original_test": 997,
+  "added_banana_overripe": 954,
+  "external_test_total": 344,
+  "external_test_by_source": {
+    "AFQC|fresh_apple": 116,
+    "AFQC|rotten_apple": 109,
+    "Banana_overripe|rotten_banana": 119
+  },
+  "combined_train": 7864,
+  "train_counts": {
+    "fresh_apple": 2209,
+    "rotten_apple": 1152,
+    "fresh_banana": 1571,
+    "rotten_banana": 1494,
+    "fresh_orange": 1212,
+    "rotten_orange": 226
+  },
+  "class_weight": {
+    "fresh_apple": 0.5933,
+    "rotten_apple": 1.1377,
+    "fresh_banana": 0.8343,
+    "rotten_banana": 0.8773,
+    "fresh_orange": 1.0814,
+    "rotten_orange": 5.7994
+  },
+  "imbalance_ratio_before": 12.669,
+  "imbalance_ratio_after": 9.774,
+  "added_afqc_fresh_apple": 1011,
+  "added_afqc_rotten_apple": 1028,
+  "added_afqc_total": 2039
+}

@@ -1,0 +1,58 @@
+{
+  "fungsi": "predict_and_explain(path_gambar)",
+  "output": [
+    "label",
+    "fruit",
+    "freshness",
+    "confidence",
+    "explanation",
+    "heatmap",
+    "gradcam_overlay",
+    "defect_mask",
+    "fruit_mask",
+    "features"
+  ],
+  "models": [
+    {
+      "model": "Keras MobileNetV3",
+      "accuracy": 0.992,
+      "macro_f1": 0.9871,
+      "size_mb": 11.8442,
+      "infer_ms": 5.55
+    },
+    {
+      "model": "mobilenetv3_float32",
+      "accuracy": 0.99,
+      "macro_f1": 0.9874,
+      "size_mb": 3.7447,
+      "infer_ms": 2.9718
+    },
+    {
+      "model": "mobilenetv3_dynamic",
+      "accuracy": 0.987,
+      "macro_f1": 0.9804,
+      "size_mb": 1.1116,
+      "infer_ms": 5.113
+    }
+  ],
+  "demo": [
+    {
+      "asli": "fresh_apple",
+      "prediksi": "fresh_apple",
+      "confidence": 0.995,
+      "penjelasan": "Apel ini dinilai segar (keyakinan 99,5%). Warna kulitnya masih mirip buah segar, permukaannya tidak terlalu kasar, dan hampir tidak ada bercak gelap. Bagian yang paling diperhatikan saat penilaian ada di bagian tengah."
+    },
+    {
+      "asli": "rotten_orange",
+      "prediksi": "rotten_orange",
+      "confidence": 1.0,
+      "penjelasan": "Jeruk ini dinilai tidak segar (keyakinan 100,0%). Alasan: ada 7 bercak; yang terbesar menutupi sekitar 12% permukaan dan berada di bagian kanan; warna kulitnya lebih pucat dan kurang kuning dibanding buah segar; bercak-bercak itu sekitar 22% lebih gelap daripada warna kulit di sekitarnya. Bagian yang paling diperhatikan saat penilaian ada di bagian tengah."
+    },
+    {
+      "asli": "fresh_banana",
+      "prediksi": "rotten_banana",
+      "confidence": 0.9687,
+      "penjelasan": "Pisang ini dinilai tidak segar (keyakinan 96,9%). Alasan: sekitar 21% permukaan buah tertutup bercak gelap/kecokelatan, sekitar 1,6 kali lebih luas daripada buah segar; ada 9 bercak; yang terbesar menutupi sekitar 19% permukaan dan berada di bagian kanan; permukaan kulitnya sekitar 4 kali lebih kasar dan berkeriput dibanding buah segar; bercak-bercak itu sekitar 44% lebih gelap daripada warna kulit di sekitarnya. Bagian yang paling diperhatikan saat penilaian ada di bagian kanan."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "dataset_dir": "/workspace/materials/dataset",
+  "tipe_struktur": "Pascal VOC (object detection): JPEGImages/ + Annotations/*.xml",
+  "jumlah_gambar": 3202,
+  "jumlah_gambar_unik": 3093,
+  "jumlah_objek": 7087,
+  "jumlah_objek_setelah_dedupe": 6977,
+  "jumlah_file_korup": 0,
+  "jumlah_grup_duplikat": 109,
+  "gambar_multilabel": 1308,
+  "distribusi_6kelas": {
+    "fresh_apple": 1726,
+    "rotten_apple": 178,
+    "fresh_banana": 2248,
+    "rotten_banana": 778,
+    "fresh_orange": 1724,
+    "rotten_orange": 323
+  },
+  "near_duplicate": {
+    "ambang_dhash": 2,
+    "jumlah_klaster": 1379,
+    "klaster_multi": 640,
+    "gambar_dalam_klaster_multi": 2354,
+    "klaster_terbesar": 43
+  },
+  "leakage": {
+    "naif_per_objek": 546,
+    "acak_per_gambar": 379,
+    "per_klaster": 0
+  },
+  "split": {
+    "train": 4871,
+    "val": 1109,
+    "test": 997
+  },
+  "class_weight_6kelas": {
+    "fresh_apple": 0.6777,
+    "rotten_apple": 6.547,
+    "fresh_banana": 0.5168,
+    "rotten_banana": 1.5034,
+    "fresh_orange": 0.6698,
+    "rotten_orange": 3.5922
+  }
+}

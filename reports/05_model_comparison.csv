@@ -1,0 +1,3 @@
+model,accuracy,macro_f1,weighted_f1,params,size_mb,infer_ms
+CNN baseline,0.996,0.9906,0.996,423526,5.16,1.67
+MobileNetV3,0.992,0.9871,0.9921,942582,11.84,5.55

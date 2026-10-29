@@ -1,0 +1,5 @@
+data/crops/
+materials/dataset/
+__pycache__/
+*.pyc
+data/crops_external/

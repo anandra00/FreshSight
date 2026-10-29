@@ -1,0 +1,47 @@
+{
+  "img_size": 224,
+  "padding_bbox": 0.05,
+  "batch_size": 32,
+  "jumlah_crop": 6977,
+  "per_split": {
+    "train": 4871,
+    "val": 1109,
+    "test": 997
+  },
+  "per_kelas": {
+    "fresh_apple": 1726,
+    "rotten_apple": 178,
+    "fresh_banana": 2248,
+    "rotten_banana": 778,
+    "fresh_orange": 1724,
+    "rotten_orange": 323
+  },
+  "kelas": [
+    "fresh_apple",
+    "rotten_apple",
+    "fresh_banana",
+    "rotten_banana",
+    "fresh_orange",
+    "rotten_orange"
+  ],
+  "class_weight": {
+    "fresh_apple": 0.678,
+    "rotten_apple": 6.547,
+    "fresh_banana": 0.517,
+    "rotten_banana": 1.503,
+    "fresh_orange": 0.67,
+    "rotten_orange": 3.592
+  },
+  "input": {
+    "skala": "[0, 1] float32",
+    "cnn_baseline": "pakai langsung [0, 1]",
+    "mobilenetv3": "include_preprocessing=False, x*2-1 -> [-1, 1]"
+  },
+  "augmentasi": [
+    "RandomFlip(horizontal)",
+    "RandomRotation(0.04)",
+    "RandomZoom(0.08)",
+    "random_brightness(+-0.08)",
+    "random_contrast(0.92-1.08)"
+  ]
+}

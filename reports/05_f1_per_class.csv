@@ -1,0 +1,7 @@
+,CNN baseline,MobileNetV3,support
+fresh_apple,0.993,0.996,230.0
+rotten_apple,0.964,0.964,27.0
+fresh_banana,0.999,0.991,354.0
+rotten_banana,1.0,0.971,101.0
+fresh_orange,0.998,1.0,239.0
+rotten_orange,0.989,1.0,46.0
