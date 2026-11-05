@@ -1,0 +1,395 @@
+{
+  "base": "models_v2\\mobilenetv3small_stage2.keras",
+  "output": "models_v2\\mobilenetv3small_external.keras",
+  "fit_size": 3394,
+  "holdout_size": 449,
+  "hard_fresh_apple": 850,
+  "class_weight": {
+    "1": 0.9702517162471396,
+    "0": 0.9871944121071012,
+    "3": 1.0456226880394575
+  },
+  "epochs_run": 4,
+  "tests": {
+    "internal_test": {
+      "old": {
+        "n": 918,
+        "accuracy": 0.9923747276688453,
+        "macro_f1": 0.9909639707604513,
+        "macro_f1_present": 0.9909639707604513,
+        "per_class": {
+          "fresh_apple": {
+            "precision": 1.0,
+            "recall": 0.9915611814345991,
+            "f1-score": 0.9957627118644067,
+            "support": 237.0
+          },
+          "rotten_apple": {
+            "precision": 0.9629629629629629,
+            "recall": 1.0,
+            "f1-score": 0.9811320754716981,
+            "support": 26.0
+          },
+          "fresh_banana": {
+            "precision": 0.9968051118210862,
+            "recall": 0.9873417721518988,
+            "f1-score": 0.9920508744038156,
+            "support": 316.0
+          },
+          "rotten_banana": {
+            "precision": 0.9739130434782609,
+            "recall": 0.9911504424778761,
+            "f1-score": 0.9824561403508772,
+            "support": 113.0
+          },
+          "fresh_orange": {
+            "precision": 0.9888268156424581,
+            "recall": 1.0,
+            "f1-score": 0.9943820224719102,
+            "support": 177.0
+          },
+          "rotten_orange": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 49.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            235,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            26,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            312,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            112,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            177,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            49
+          ]
+        ]
+      },
+      "finetuned": {
+        "n": 918,
+        "accuracy": 0.8877995642701525,
+        "macro_f1": 0.8434408300858358,
+        "macro_f1_present": 0.8434408300858358,
+        "per_class": {
+          "fresh_apple": {
+            "precision": 1.0,
+            "recall": 0.6877637130801688,
+            "f1-score": 0.8150000000000001,
+            "support": 237.0
+          },
+          "rotten_apple": {
+            "precision": 0.20967741935483872,
+            "recall": 1.0,
+            "f1-score": 0.3466666666666667,
+            "support": 26.0
+          },
+          "fresh_banana": {
+            "precision": 0.9968051118210862,
+            "recall": 0.9873417721518988,
+            "f1-score": 0.9920508744038156,
+            "support": 316.0
+          },
+          "rotten_banana": {
+            "precision": 0.9739130434782609,
+            "recall": 0.9911504424778761,
+            "f1-score": 0.9824561403508772,
+            "support": 113.0
+          },
+          "fresh_orange": {
+            "precision": 0.9935064935064936,
+            "recall": 0.864406779661017,
+            "f1-score": 0.9244712990936557,
+            "support": 177.0
+          },
+          "rotten_orange": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 49.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            163,
+            74,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            26,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            312,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            112,
+            0,
+            0
+          ],
+          [
+            0,
+            24,
+            0,
+            0,
+            153,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            49
+          ]
+        ]
+      }
+    },
+    "external_test": {
+      "old": {
+        "n": 344,
+        "accuracy": 0.5901162790697675,
+        "macro_f1": 0.4204843512507134,
+        "macro_f1_present": 0.5606458016676178,
+        "per_class": {
+          "fresh_apple": {
+            "precision": 0.46938775510204084,
+            "recall": 0.19827586206896552,
+            "f1-score": 0.27878787878787875,
+            "support": 116.0
+          },
+          "rotten_apple": {
+            "precision": 0.953125,
+            "recall": 0.5596330275229358,
+            "f1-score": 0.7052023121387283,
+            "support": 109.0
+          },
+          "fresh_banana": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "rotten_banana": {
+            "precision": 0.536036036036036,
+            "recall": 1.0,
+            "f1-score": 0.6979472140762463,
+            "support": 119.0
+          },
+          "fresh_orange": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "rotten_orange": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            23,
+            3,
+            0,
+            87,
+            3,
+            0
+          ],
+          [
+            26,
+            61,
+            0,
+            16,
+            6,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            119,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "finetuned": {
+        "n": 344,
+        "accuracy": 0.9563953488372093,
+        "macro_f1": 0.955499297877811,
+        "macro_f1_present": 0.955499297877811,
+        "per_class": {
+          "fresh_apple": {
+            "precision": 0.9316239316239316,
+            "recall": 0.9396551724137931,
+            "f1-score": 0.9356223175965666,
+            "support": 116.0
+          },
+          "rotten_apple": {
+            "precision": 0.9351851851851852,
+            "recall": 0.926605504587156,
+            "f1-score": 0.9308755760368663,
+            "support": 109.0
+          },
+          "fresh_banana": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "rotten_banana": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 119.0
+          },
+          "fresh_orange": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "rotten_orange": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            109,
+            7,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            8,
+            101,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            119,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  }
+}

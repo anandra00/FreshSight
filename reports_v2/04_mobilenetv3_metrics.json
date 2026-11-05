@@ -1,18 +1,18 @@
 {
   "model": "mobilenetv3small",
-  "stage1_epochs": 2,
-  "stage2_epochs": 1,
-  "stage1_time_s": 153.1,
-  "stage2_time_s": 95.5,
+  "stage1_epochs": 10,
+  "stage2_epochs": 15,
+  "stage1_time_s": 699.4,
+  "stage2_time_s": 1221.5,
   "params": 942582,
   "size_mb": 4.14,
-  "test_loss": 0.49874866008758545,
-  "test_accuracy": 0.9912853837013245,
-  "ci95_low": 0.9836782171927438,
-  "ci95_high": 0.997334036939314,
-  "macro_f1": 0.9860148667547435,
-  "weighted_f1": 0.9912985308994529,
-  "infer_ms_per_image": 12.05,
+  "test_loss": 0.4501363933086395,
+  "test_accuracy": 0.9923747181892395,
+  "ci95_low": 0.9853897404731358,
+  "ci95_high": 0.9982426846496911,
+  "macro_f1": 0.9909639707604513,
+  "weighted_f1": 0.9923926305260472,
+  "infer_ms_per_image": 10.06,
   "per_class": {
     "fresh_apple": {
       "precision": 1.0,
@@ -21,9 +21,9 @@
       "support": 237.0
     },
     "rotten_apple": {
-      "precision": 0.9615384615384616,
-      "recall": 0.9615384615384616,
-      "f1-score": 0.9615384615384616,
+      "precision": 0.9629629629629629,
+      "recall": 1.0,
+      "f1-score": 0.9811320754716981,
       "support": 26.0
     },
     "fresh_banana": {
@@ -45,22 +45,22 @@
       "support": 177.0
     },
     "rotten_orange": {
-      "precision": 0.98,
+      "precision": 1.0,
       "recall": 1.0,
-      "f1-score": 0.98989898989899,
+      "f1-score": 1.0,
       "support": 49.0
     },
-    "accuracy": 0.9912854030501089,
+    "accuracy": 0.9923747276688453,
     "macro avg": {
-      "precision": 0.9835139054133778,
-      "recall": 0.988598642933806,
-      "f1-score": 0.9860148667547435,
+      "precision": 0.9870846556507947,
+      "recall": 0.9950088993440623,
+      "f1-score": 0.9909639707604513,
       "support": 918.0
     },
     "weighted avg": {
-      "precision": 0.9913779255089562,
-      "recall": 0.9912854030501089,
-      "f1-score": 0.9912985308994529,
+      "precision": 0.9924858089915674,
+      "recall": 0.9923747276688453,
+      "f1-score": 0.9923926305260472,
       "support": 918.0
     }
   },
@@ -75,11 +75,11 @@
     ],
     [
       0,
-      25,
+      26,
       0,
       0,
       0,
-      1
+      0
     ],
     [
       0,

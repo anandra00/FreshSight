@@ -5,3 +5,4 @@ __pycache__/
 data/crops_external/
 models_v2/*_stage*.keras
 reports_v2/09_v2_head_features.npz
+reports_v2/10_v2_head_features.npz
