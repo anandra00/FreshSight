@@ -218,6 +218,7 @@ FreshSight/
 │       └── orange_external/
 ├── models/                     # v1 historical artefacts
 ├── models_v2/
+│   ├── cnn_baseline.keras      # smoke/partial baseline (full 25 stopped)
 │   ├── mobilenetv3small.keras
 │   ├── mobilenetv3small_external.keras
 │   └── mobilenetv3small_external_recalibrated.keras
