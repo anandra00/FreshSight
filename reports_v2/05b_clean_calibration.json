@@ -1,0 +1,309 @@
+{
+  "protocol": "crop-level clean split; prior correction + temperature fit on val only",
+  "val_size": 952,
+  "test_size": 918,
+  "classes": [
+    "fresh_apple",
+    "rotten_apple",
+    "fresh_banana",
+    "rotten_banana",
+    "fresh_orange",
+    "rotten_orange"
+  ],
+  "sampler_power": 0.5,
+  "baseline_test": {
+    "accuracy": 0.9912854030501089,
+    "macro_f1": 0.9860148667547435,
+    "weighted_f1": 0.9912985308994529,
+    "per_class": {
+      "fresh_apple": {
+        "precision": 1.0,
+        "recall": 0.9915611814345991,
+        "f1-score": 0.9957627118644067,
+        "support": 237.0
+      },
+      "rotten_apple": {
+        "precision": 0.9615384615384616,
+        "recall": 0.9615384615384616,
+        "f1-score": 0.9615384615384616,
+        "support": 26.0
+      },
+      "fresh_banana": {
+        "precision": 0.9968051118210862,
+        "recall": 0.9873417721518988,
+        "f1-score": 0.9920508744038156,
+        "support": 316.0
+      },
+      "rotten_banana": {
+        "precision": 0.9739130434782609,
+        "recall": 0.9911504424778761,
+        "f1-score": 0.9824561403508772,
+        "support": 113.0
+      },
+      "fresh_orange": {
+        "precision": 0.9888268156424581,
+        "recall": 1.0,
+        "f1-score": 0.9943820224719102,
+        "support": 177.0
+      },
+      "rotten_orange": {
+        "precision": 0.98,
+        "recall": 1.0,
+        "f1-score": 0.98989898989899,
+        "support": 49.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        235,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        25,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        312,
+        3,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        112,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        177,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        49
+      ]
+    ]
+  },
+  "ensemble_test": {
+    "accuracy": 0.9912854030501089,
+    "macro_f1": 0.9860148667547435,
+    "weighted_f1": 0.9912985308994529,
+    "per_class": {
+      "fresh_apple": {
+        "precision": 1.0,
+        "recall": 0.9915611814345991,
+        "f1-score": 0.9957627118644067,
+        "support": 237.0
+      },
+      "rotten_apple": {
+        "precision": 0.9615384615384616,
+        "recall": 0.9615384615384616,
+        "f1-score": 0.9615384615384616,
+        "support": 26.0
+      },
+      "fresh_banana": {
+        "precision": 0.9968051118210862,
+        "recall": 0.9873417721518988,
+        "f1-score": 0.9920508744038156,
+        "support": 316.0
+      },
+      "rotten_banana": {
+        "precision": 0.9739130434782609,
+        "recall": 0.9911504424778761,
+        "f1-score": 0.9824561403508772,
+        "support": 113.0
+      },
+      "fresh_orange": {
+        "precision": 0.9888268156424581,
+        "recall": 1.0,
+        "f1-score": 0.9943820224719102,
+        "support": 177.0
+      },
+      "rotten_orange": {
+        "precision": 0.98,
+        "recall": 1.0,
+        "f1-score": 0.98989898989899,
+        "support": 49.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        235,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        25,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        312,
+        3,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        112,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        177,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        49
+      ]
+    ]
+  },
+  "calibrated": {
+    "cnn_weight": 0.0,
+    "temperature": 0.5,
+    "tau": 0.5,
+    "bias": [
+      0.0650190539389256,
+      -0.518113988401574,
+      0.11924730432981889,
+      -0.1387833325200004,
+      0.06637407080626045,
+      -0.36676192183858936
+    ],
+    "val_accuracy": 0.9968487394957983,
+    "test": {
+      "accuracy": 0.9912854030501089,
+      "macro_f1": 0.9860148667547435,
+      "weighted_f1": 0.9912985308994529,
+      "per_class": {
+        "fresh_apple": {
+          "precision": 1.0,
+          "recall": 0.9915611814345991,
+          "f1-score": 0.9957627118644067,
+          "support": 237.0
+        },
+        "rotten_apple": {
+          "precision": 0.9615384615384616,
+          "recall": 0.9615384615384616,
+          "f1-score": 0.9615384615384616,
+          "support": 26.0
+        },
+        "fresh_banana": {
+          "precision": 0.9968051118210862,
+          "recall": 0.9873417721518988,
+          "f1-score": 0.9920508744038156,
+          "support": 316.0
+        },
+        "rotten_banana": {
+          "precision": 0.9739130434782609,
+          "recall": 0.9911504424778761,
+          "f1-score": 0.9824561403508772,
+          "support": 113.0
+        },
+        "fresh_orange": {
+          "precision": 0.9888268156424581,
+          "recall": 1.0,
+          "f1-score": 0.9943820224719102,
+          "support": 177.0
+        },
+        "rotten_orange": {
+          "precision": 0.98,
+          "recall": 1.0,
+          "f1-score": 0.98989898989899,
+          "support": 49.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          235,
+          1,
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          25,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          312,
+          3,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          112,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          177,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          49
+        ]
+      ]
+    },
+    "ci95_low": 0.9836782171927438,
+    "ci95_high": 0.997334036939314
+  }
+}

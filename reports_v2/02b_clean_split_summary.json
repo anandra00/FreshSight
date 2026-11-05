@@ -1,0 +1,48 @@
+{
+  "protocol": "crop-level dHash clustering + same-source + old-image-cluster grouping",
+  "crop_dhash_thr": 2,
+  "balanced_train": true,
+  "label_smoothing": 0.1,
+  "n_crops": 6977,
+  "n_clusters": 979,
+  "cluster_leak": 0,
+  "source_image_leak": 0,
+  "split_counts": {
+    "train": 5107,
+    "val": 952,
+    "test": 918
+  },
+  "class_distribution": {
+    "fresh_apple": {
+      "train": 1288,
+      "val": 201,
+      "test": 237
+    },
+    "rotten_apple": {
+      "train": 125,
+      "val": 27,
+      "test": 26
+    },
+    "fresh_banana": {
+      "train": 1600,
+      "val": 332,
+      "test": 316
+    },
+    "rotten_banana": {
+      "train": 570,
+      "val": 95,
+      "test": 113
+    },
+    "fresh_orange": {
+      "train": 1295,
+      "val": 252,
+      "test": 177
+    },
+    "rotten_orange": {
+      "train": 229,
+      "val": 45,
+      "test": 49
+    }
+  },
+  "class_weight": null
+}

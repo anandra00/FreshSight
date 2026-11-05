@@ -1,0 +1,433 @@
+{
+  "backbone": "models_v2\\mobilenetv3small.keras",
+  "output": "models_v2\\mobilenetv3small_recalibrated.keras",
+  "C": 0.1,
+  "C_grid": [
+    {
+      "C": 0.01,
+      "val_accuracy": 0.9907894736842106,
+      "val_macro_f1_present": 0.9823449348327996
+    },
+    {
+      "C": 0.03,
+      "val_accuracy": 0.9947368421052631,
+      "val_macro_f1_present": 0.9864826089558313
+    },
+    {
+      "C": 0.1,
+      "val_accuracy": 0.9953947368421052,
+      "val_macro_f1_present": 0.9871818267271201
+    },
+    {
+      "C": 0.3,
+      "val_accuracy": 0.9940789473684211,
+      "val_macro_f1_present": 0.9857970355471092
+    },
+    {
+      "C": 1.0,
+      "val_accuracy": 0.9940789473684211,
+      "val_macro_f1_present": 0.9857970355471092
+    },
+    {
+      "C": 3.0,
+      "val_accuracy": 0.9940789473684211,
+      "val_macro_f1_present": 0.9857970355471092
+    }
+  ],
+  "train_sizes": {
+    "orig_train": 5107,
+    "ext_train": 2993
+  },
+  "val_sizes": {
+    "orig_val": 952,
+    "ext_val": 119,
+    "ext_holdout": 449
+  },
+  "keras_sklearn_max_prob_diff": 6.288744347493491e-08,
+  "tests": {
+    "orig_test": {
+      "old": {
+        "n": 918,
+        "accuracy": 0.9912854030501089,
+        "macro_f1": 0.9860148667547435,
+        "macro_f1_present": 0.9860148667547435,
+        "weighted_f1": 0.9912985308994529,
+        "per_class": {
+          "fresh_apple": {
+            "precision": 1.0,
+            "recall": 0.9915611814345991,
+            "f1-score": 0.9957627118644067,
+            "support": 237.0
+          },
+          "rotten_apple": {
+            "precision": 0.9615384615384616,
+            "recall": 0.9615384615384616,
+            "f1-score": 0.9615384615384616,
+            "support": 26.0
+          },
+          "fresh_banana": {
+            "precision": 0.9968051118210862,
+            "recall": 0.9873417721518988,
+            "f1-score": 0.9920508744038156,
+            "support": 316.0
+          },
+          "rotten_banana": {
+            "precision": 0.9739130434782609,
+            "recall": 0.9911504424778761,
+            "f1-score": 0.9824561403508772,
+            "support": 113.0
+          },
+          "fresh_orange": {
+            "precision": 0.9888268156424581,
+            "recall": 1.0,
+            "f1-score": 0.9943820224719102,
+            "support": 177.0
+          },
+          "rotten_orange": {
+            "precision": 0.98,
+            "recall": 1.0,
+            "f1-score": 0.98989898989899,
+            "support": 49.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            235,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            25,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            312,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            112,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            177,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            49
+          ]
+        ]
+      },
+      "recalibrated": {
+        "n": 918,
+        "accuracy": 0.9880174291938998,
+        "macro_f1": 0.975296883126096,
+        "macro_f1_present": 0.975296883126096,
+        "weighted_f1": 0.9882306998053935,
+        "per_class": {
+          "fresh_apple": {
+            "precision": 0.9957081545064378,
+            "recall": 0.9789029535864979,
+            "f1-score": 0.9872340425531914,
+            "support": 237.0
+          },
+          "rotten_apple": {
+            "precision": 0.8333333333333334,
+            "recall": 0.9615384615384616,
+            "f1-score": 0.8928571428571429,
+            "support": 26.0
+          },
+          "fresh_banana": {
+            "precision": 0.9968051118210862,
+            "recall": 0.9873417721518988,
+            "f1-score": 0.9920508744038156,
+            "support": 316.0
+          },
+          "rotten_banana": {
+            "precision": 0.9739130434782609,
+            "recall": 0.9911504424778761,
+            "f1-score": 0.9824561403508772,
+            "support": 113.0
+          },
+          "fresh_orange": {
+            "precision": 0.9943820224719101,
+            "recall": 1.0,
+            "f1-score": 0.9971830985915493,
+            "support": 177.0
+          },
+          "rotten_orange": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 49.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            232,
+            5,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            25,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            312,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            112,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            177,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            49
+          ]
+        ]
+      }
+    },
+    "ext_test": {
+      "old": {
+        "n": 344,
+        "accuracy": 0.6133720930232558,
+        "macro_f1": 0.3059805707346691,
+        "macro_f1_present": 0.6119611414693382,
+        "weighted_f1": 0.6123162621256407,
+        "per_class": {
+          "fresh_apple": {
+            "precision": 0.546875,
+            "recall": 0.3017241379310345,
+            "f1-score": 0.3888888888888889,
+            "support": 116.0
+          },
+          "rotten_apple": {
+            "precision": 0.9193548387096774,
+            "recall": 0.5229357798165137,
+            "f1-score": 0.6666666666666667,
+            "support": 109.0
+          },
+          "fresh_banana": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "rotten_banana": {
+            "precision": 0.6397849462365591,
+            "recall": 1.0,
+            "f1-score": 0.7803278688524591,
+            "support": 119.0
+          },
+          "fresh_orange": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "rotten_orange": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            35,
+            5,
+            0,
+            60,
+            13,
+            3
+          ],
+          [
+            29,
+            57,
+            2,
+            7,
+            9,
+            5
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            119,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "recalibrated": {
+        "n": 344,
+        "accuracy": 0.9651162790697675,
+        "macro_f1": 0.9644268774703558,
+        "macro_f1_present": 0.9644268774703558,
+        "weighted_f1": 0.9650749149738027,
+        "per_class": {
+          "fresh_apple": {
+            "precision": 1.0,
+            "recall": 0.896551724137931,
+            "f1-score": 0.9454545454545454,
+            "support": 116.0
+          },
+          "rotten_apple": {
+            "precision": 0.9008264462809917,
+            "recall": 1.0,
+            "f1-score": 0.9478260869565218,
+            "support": 109.0
+          },
+          "fresh_banana": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "rotten_banana": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1-score": 1.0,
+            "support": 119.0
+          },
+          "fresh_orange": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          },
+          "rotten_orange": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1-score": 0.0,
+            "support": 0.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            104,
+            12,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            109,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            119,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  }
+}

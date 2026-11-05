@@ -1,0 +1,125 @@
+{
+  "model": "mobilenetv3small",
+  "stage1_epochs": 2,
+  "stage2_epochs": 1,
+  "stage1_time_s": 153.1,
+  "stage2_time_s": 95.5,
+  "params": 942582,
+  "size_mb": 4.14,
+  "test_loss": 0.49874866008758545,
+  "test_accuracy": 0.9912853837013245,
+  "ci95_low": 0.9836782171927438,
+  "ci95_high": 0.997334036939314,
+  "macro_f1": 0.9860148667547435,
+  "weighted_f1": 0.9912985308994529,
+  "infer_ms_per_image": 12.05,
+  "per_class": {
+    "fresh_apple": {
+      "precision": 1.0,
+      "recall": 0.9915611814345991,
+      "f1-score": 0.9957627118644067,
+      "support": 237.0
+    },
+    "rotten_apple": {
+      "precision": 0.9615384615384616,
+      "recall": 0.9615384615384616,
+      "f1-score": 0.9615384615384616,
+      "support": 26.0
+    },
+    "fresh_banana": {
+      "precision": 0.9968051118210862,
+      "recall": 0.9873417721518988,
+      "f1-score": 0.9920508744038156,
+      "support": 316.0
+    },
+    "rotten_banana": {
+      "precision": 0.9739130434782609,
+      "recall": 0.9911504424778761,
+      "f1-score": 0.9824561403508772,
+      "support": 113.0
+    },
+    "fresh_orange": {
+      "precision": 0.9888268156424581,
+      "recall": 1.0,
+      "f1-score": 0.9943820224719102,
+      "support": 177.0
+    },
+    "rotten_orange": {
+      "precision": 0.98,
+      "recall": 1.0,
+      "f1-score": 0.98989898989899,
+      "support": 49.0
+    },
+    "accuracy": 0.9912854030501089,
+    "macro avg": {
+      "precision": 0.9835139054133778,
+      "recall": 0.988598642933806,
+      "f1-score": 0.9860148667547435,
+      "support": 918.0
+    },
+    "weighted avg": {
+      "precision": 0.9913779255089562,
+      "recall": 0.9912854030501089,
+      "f1-score": 0.9912985308994529,
+      "support": 918.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      235,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      25,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      312,
+      3,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      112,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      177,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      49
+    ]
+  ],
+  "classes": [
+    "fresh_apple",
+    "rotten_apple",
+    "fresh_banana",
+    "rotten_banana",
+    "fresh_orange",
+    "rotten_orange"
+  ]
+}

@@ -1,0 +1,17 @@
+file,true,base_pred,base_conf,auto_pred,auto_conf,base_ok,auto_ok
+fresh_apple__0__Red_Apple.jpg,fresh_apple,fresh_apple,0.6375454664230347,fresh_apple,0.6257358193397522,True,True
+fresh_apple__1__Apple.jpg,fresh_apple,fresh_apple,0.45167988538742065,fresh_apple,0.4249836206436157,True,True
+fresh_banana__0__Banana-Single.jpg,fresh_banana,fresh_banana,0.9068412184715271,fresh_banana,0.9068412184715271,True,True
+fresh_banana__1__Banana_isolated_on_white.jpg,fresh_banana,fresh_banana,0.961365282535553,fresh_banana,0.9475434422492981,True,True
+fresh_orange__0__Orange-Fruit-Pieces.jpg,fresh_orange,fresh_orange,0.48815035820007324,fresh_orange,0.48815035820007324,True,True
+fresh_orange__1__Ambersweet_oranges.jpg,fresh_orange,fresh_orange,0.4012770354747772,rotten_orange,0.44514188170433044,True,False
+fresh_orange__2__Oranges_-_whole-halved-segment.jpg,fresh_orange,fresh_orange,0.5650057196617126,fresh_orange,0.5571746826171875,True,True
+rotten_apple__0__Rotten_Apple_01.jpg,rotten_apple,rotten_orange,0.3929433822631836,rotten_orange,0.3826926052570343,False,False
+rotten_apple__1__Rotten_Apple_02.jpg,rotten_apple,fresh_banana,0.40597987174987793,rotten_apple,0.6961408257484436,False,True
+rotten_apple__2__Rotten_Apple_03.jpg,rotten_apple,rotten_apple,0.30692920088768005,rotten_apple,0.29814639687538147,True,True
+rotten_banana__0__Extremely_overripe_banana.jpg,rotten_banana,fresh_banana,0.444827139377594,rotten_banana,0.5263491868972778,False,True
+rotten_banana__1__Overripe_banana_20211221_152406.jpg,rotten_banana,fresh_banana,0.7783022522926331,fresh_banana,0.7092164158821106,False,False
+rotten_banana__2__Overripe_kitchen_bananas.jpg,rotten_banana,rotten_orange,0.4580514132976532,rotten_banana,0.43197503685951233,False,True
+rotten_orange__0__Moldy_orange_in_lake.jpg,rotten_orange,rotten_orange,0.6773363947868347,rotten_orange,0.6298559308052063,True,True
+rotten_orange__1__Still_Life_Photography_Rotten_Orange.jpg,rotten_orange,rotten_orange,0.6624770164489746,rotten_orange,0.6510947942733765,True,True
+rotten_orange__2__Rotten_Oranges.JPG,rotten_orange,rotten_orange,0.4144318401813507,rotten_orange,0.3917537331581116,True,True

@@ -1,0 +1,269 @@
+{
+  "model": "models_v2\\mobilenetv3small.keras",
+  "external_crops": {
+    "n": 688,
+    "accuracy": 0.6133720930232558,
+    "macro_f1": 0.3059805707346691,
+    "per_class": {
+      "fresh_apple": {
+        "precision": 0.546875,
+        "recall": 0.3017241379310345,
+        "f1-score": 0.3888888888888889,
+        "support": 232.0
+      },
+      "rotten_apple": {
+        "precision": 0.9193548387096774,
+        "recall": 0.5229357798165137,
+        "f1-score": 0.6666666666666667,
+        "support": 218.0
+      },
+      "fresh_banana": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "rotten_banana": {
+        "precision": 0.6397849462365591,
+        "recall": 1.0,
+        "f1-score": 0.7803278688524591,
+        "support": 238.0
+      },
+      "fresh_orange": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "rotten_orange": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      }
+    },
+    "confusion_matrix": [
+      [
+        70,
+        10,
+        0,
+        120,
+        26,
+        6
+      ],
+      [
+        58,
+        114,
+        4,
+        14,
+        18,
+        10
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        238,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "macro_f1_present": 0.612,
+    "labels_present": [
+      "fresh_apple",
+      "rotten_apple",
+      "rotten_banana"
+    ]
+  },
+  "wikimedia": {
+    "n": 16,
+    "baseline_accuracy": 0.6875,
+    "autocrop_accuracy": 0.8125,
+    "rows": [
+      {
+        "file": "fresh_apple__0__Red_Apple.jpg",
+        "true": "fresh_apple",
+        "base_pred": "fresh_apple",
+        "base_conf": 0.6375454664230347,
+        "auto_pred": "fresh_apple",
+        "auto_conf": 0.6257358193397522,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "fresh_apple__1__Apple.jpg",
+        "true": "fresh_apple",
+        "base_pred": "fresh_apple",
+        "base_conf": 0.45167988538742065,
+        "auto_pred": "fresh_apple",
+        "auto_conf": 0.4249836206436157,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "fresh_banana__0__Banana-Single.jpg",
+        "true": "fresh_banana",
+        "base_pred": "fresh_banana",
+        "base_conf": 0.9068412184715271,
+        "auto_pred": "fresh_banana",
+        "auto_conf": 0.9068412184715271,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "fresh_banana__1__Banana_isolated_on_white.jpg",
+        "true": "fresh_banana",
+        "base_pred": "fresh_banana",
+        "base_conf": 0.961365282535553,
+        "auto_pred": "fresh_banana",
+        "auto_conf": 0.9475434422492981,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "fresh_orange__0__Orange-Fruit-Pieces.jpg",
+        "true": "fresh_orange",
+        "base_pred": "fresh_orange",
+        "base_conf": 0.48815035820007324,
+        "auto_pred": "fresh_orange",
+        "auto_conf": 0.48815035820007324,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "fresh_orange__1__Ambersweet_oranges.jpg",
+        "true": "fresh_orange",
+        "base_pred": "fresh_orange",
+        "base_conf": 0.4012770354747772,
+        "auto_pred": "rotten_orange",
+        "auto_conf": 0.44514188170433044,
+        "base_ok": true,
+        "auto_ok": false
+      },
+      {
+        "file": "fresh_orange__2__Oranges_-_whole-halved-segment.jpg",
+        "true": "fresh_orange",
+        "base_pred": "fresh_orange",
+        "base_conf": 0.5650057196617126,
+        "auto_pred": "fresh_orange",
+        "auto_conf": 0.5571746826171875,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "rotten_apple__0__Rotten_Apple_01.jpg",
+        "true": "rotten_apple",
+        "base_pred": "rotten_orange",
+        "base_conf": 0.3929433822631836,
+        "auto_pred": "rotten_orange",
+        "auto_conf": 0.3826926052570343,
+        "base_ok": false,
+        "auto_ok": false
+      },
+      {
+        "file": "rotten_apple__1__Rotten_Apple_02.jpg",
+        "true": "rotten_apple",
+        "base_pred": "fresh_banana",
+        "base_conf": 0.40597987174987793,
+        "auto_pred": "rotten_apple",
+        "auto_conf": 0.6961408257484436,
+        "base_ok": false,
+        "auto_ok": true
+      },
+      {
+        "file": "rotten_apple__2__Rotten_Apple_03.jpg",
+        "true": "rotten_apple",
+        "base_pred": "rotten_apple",
+        "base_conf": 0.30692920088768005,
+        "auto_pred": "rotten_apple",
+        "auto_conf": 0.29814639687538147,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "rotten_banana__0__Extremely_overripe_banana.jpg",
+        "true": "rotten_banana",
+        "base_pred": "fresh_banana",
+        "base_conf": 0.444827139377594,
+        "auto_pred": "rotten_banana",
+        "auto_conf": 0.5263491868972778,
+        "base_ok": false,
+        "auto_ok": true
+      },
+      {
+        "file": "rotten_banana__1__Overripe_banana_20211221_152406.jpg",
+        "true": "rotten_banana",
+        "base_pred": "fresh_banana",
+        "base_conf": 0.7783022522926331,
+        "auto_pred": "fresh_banana",
+        "auto_conf": 0.7092164158821106,
+        "base_ok": false,
+        "auto_ok": false
+      },
+      {
+        "file": "rotten_banana__2__Overripe_kitchen_bananas.jpg",
+        "true": "rotten_banana",
+        "base_pred": "rotten_orange",
+        "base_conf": 0.4580514132976532,
+        "auto_pred": "rotten_banana",
+        "auto_conf": 0.43197503685951233,
+        "base_ok": false,
+        "auto_ok": true
+      },
+      {
+        "file": "rotten_orange__0__Moldy_orange_in_lake.jpg",
+        "true": "rotten_orange",
+        "base_pred": "rotten_orange",
+        "base_conf": 0.6773363947868347,
+        "auto_pred": "rotten_orange",
+        "auto_conf": 0.6298559308052063,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "rotten_orange__1__Still_Life_Photography_Rotten_Orange.jpg",
+        "true": "rotten_orange",
+        "base_pred": "rotten_orange",
+        "base_conf": 0.6624770164489746,
+        "auto_pred": "rotten_orange",
+        "auto_conf": 0.6510947942733765,
+        "base_ok": true,
+        "auto_ok": true
+      },
+      {
+        "file": "rotten_orange__2__Rotten_Oranges.JPG",
+        "true": "rotten_orange",
+        "base_pred": "rotten_orange",
+        "base_conf": 0.4144318401813507,
+        "auto_pred": "rotten_orange",
+        "auto_conf": 0.3917537331581116,
+        "base_ok": true,
+        "auto_ok": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "img_size": 224,
+  "padding_bbox": 0.05,
+  "batch_size": 32,
+  "protocol": "crop-level dHash cluster",
+  "balanced_train": true,
+  "sampler_power": 0.5,
+  "label_smoothing": 0.1,
+  "jumlah_crop": 6977,
+  "per_split": {
+    "train": 5107,
+    "val": 952,
+    "test": 918
+  },
+  "per_kelas": {
+    "fresh_apple": 1726,
+    "rotten_apple": 178,
+    "fresh_banana": 2248,
+    "rotten_banana": 778,
+    "fresh_orange": 1724,
+    "rotten_orange": 323
+  },
+  "kelas": [
+    "fresh_apple",
+    "rotten_apple",
+    "fresh_banana",
+    "rotten_banana",
+    "fresh_orange",
+    "rotten_orange"
+  ],
+  "class_weight": null,
+  "input": {
+    "skala": "[0, 1] float32",
+    "cnn_baseline": "pakai langsung [0, 1]",
+    "mobilenetv3": "include_preprocessing=False, x*2-1 -> [-1, 1]",
+    "efficientnetv2": "include_preprocessing=True, x*255 -> [0, 255]"
+  },
+  "augmentasi": [
+    "RandomFlip(horizontal)",
+    "RandomRotation(0.08)",
+    "RandomZoom(0.15)",
+    "RandomTranslation(0.08)",
+    "random_brightness(+-0.15)",
+    "random_contrast(0.80-1.20)",
+    "random_saturation(0.75-1.25)",
+    "random_hue(+-0.04)",
+    "random_gamma(0.85-1.15)",
+    "cutout(p=0.25)"
+  ]
+}

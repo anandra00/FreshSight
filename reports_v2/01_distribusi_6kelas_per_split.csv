@@ -1,0 +1,7 @@
+label6,test,train,val
+fresh_apple,230,1198,298
+rotten_apple,27,124,27
+fresh_banana,354,1571,323
+rotten_banana,101,540,137
+fresh_orange,239,1212,273
+rotten_orange,46,226,51

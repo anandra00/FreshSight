@@ -1,0 +1,7 @@
+label,total_objek,train_objek,class_weight
+fresh_apple,1726,1198,0.678
+rotten_apple,178,124,6.547
+fresh_banana,2248,1571,0.517
+rotten_banana,778,540,1.503
+fresh_orange,1724,1212,0.67
+rotten_orange,323,226,3.592
