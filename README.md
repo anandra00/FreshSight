@@ -63,16 +63,16 @@ Proyek ini menggabungkan:
 | MobileNetV3Small penuh (10 + 15 epoch) | **99,24%** | 0,991 | 61,34% | 0,612 | 4,34 MB |
 | + fine-tune eksternal (AFQC/pisang) | 88,78% | 0,843 | 95,64% | 0,955 | 10,05 MB |
 | **+ head dikalibrasi ulang (final)** | **98,91%** | **0,981** | **97,09%** | **0,970** | 4,33 MB |
-| CNN baseline (smoke, 4 epoch) | 96,08% | 0,895 | — | — | 5,16 MB |
+| CNN baseline (25 epoch) | **99,24%** | 0,985 | — | — | 5,16 MB |
 
 - Test internal: **918 crop**, 95% CI MobileNet penuh **98,54–99,82%**.
 - Test eksternal: **344 crop** — 116 fresh apple, 109 rotten apple, 119 rotten banana.
 - Model final: `models_v2/mobilenetv3small_external_recalibrated.keras`.
 - MobileNet penuh: `models_v2/mobilenetv3small.keras`.
-- **Status CNN:** kode CNN baseline tetap ada di notebook v2 dan
-  `models_v2/cnn_baseline.keras` masih ada sebagai **smoke/parsial**. Full CNN 25 epoch
-  **dihentikan**, jadi `03` dan `05` masih smoke. CNN **bukan bagian model final**;
-  model final memakai MobileNetV3Small.
+- **Status CNN:** CNN baseline full 25 epoch **selesai**; `03` dan `05` sekarang penuh.
+  CNN dan MobileNet sama-sama **99,24%** accuracy; MobileNet dipilih sebagai model final
+  karena macro F1 lebih tinggi (**0,991 vs 0,985**), model lebih kecil (**4,34 vs 5,16 MB**),
+  dan inferensi lebih cepat (**11,98 vs 16,90 ms**). CNN tetap dilaporkan sebagai pembanding.
 
 **F1 eksternal per kelas (head final):**
 
@@ -221,7 +221,7 @@ FreshSight/
 │       └── orange_external/
 ├── models/                     # artefak historis v1
 ├── models_v2/
-│   ├── cnn_baseline.keras      # baseline smoke/parsial (full 25 dihentikan)
+│   ├── cnn_baseline.keras      # baseline full 25 epoch
 │   ├── mobilenetv3small.keras
 │   ├── mobilenetv3small_external.keras
 │   └── mobilenetv3small_external_recalibrated.keras
@@ -259,8 +259,9 @@ Checkpoint stage (`models_v2/*_stage*.keras`) dan cache fitur
   internal train + external train (8.100 crop), divalidasi pada internal val + external val +
   holdout. Internal 98,91%, eksternal 97,09%.
 - **Test eksternal 344 tidak pernah dipakai untuk fitting atau pemilihan model.**
-- **CNN baseline:** full 25 epoch di CPU dihentikan; `03`/`05` masih smoke/parsial.
-  `04` dan `10` adalah hasil model penuh.
+- **CNN baseline:** full 25 epoch selesai; test internal 99,24%, macro F1 0,985, 7 error.
+  `03`/`05` sekarang penuh. CNN dan MobileNet sama-sama 99,24% accuracy; MobileNet
+  dipilih final karena macro F1 lebih tinggi dan model lebih kecil/cepat.
 - Notebook v1 dan laporan v1 disimpan untuk perbandingan historis; jangan campur split
   997 objek dengan split bersih v2.
 
@@ -273,8 +274,9 @@ Checkpoint stage (`models_v2/*_stage*.keras`) dan cache fitur
   jeruk**. Ketahanan jeruk secara eksternal belum terbukti.
 - **Data jeruk:** dataset Mendeley 15 ribu gambar ditautkan tetapi tidak dipakai di model
   final v2; eksperimen jeruk sebelumnya bersifat colour-separable dan bukan benchmark dunia nyata.
-- **CNN baseline:** training full 25 epoch dihentikan; tabel CNN saat ini smoke/parsial dan
-  tidak boleh dipresentasikan sebagai perbandingan penuh.
+- **Pemilihan model:** CNN dan MobileNet sama-sama 99,24% accuracy; CNN tetap pembanding,
+  sedangkan MobileNet dipilih sebagai final karena macro F1 lebih tinggi (0,991 vs 0,985),
+  lebih kecil, dan lebih cepat.
 - **TFLite:** head final v2 belum diekspor ke TFLite; artefak TFLite v1 bersifat historis.
 - 16 gambar Wikimedia adalah sanity check, bukan benchmark; terlalu kecil untuk klaim statistik.
 - Klasifikasi bersifat **satu crop → satu label**. Tumpukan buah memerlukan detektor/pipeline
@@ -289,7 +291,7 @@ Checkpoint stage (`models_v2/*_stage*.keras`) dan cache fitur
 - [x] Metrik per kelas + audit error eksternal
 - [ ] Tambah data apel segar on-tree yang beragam (pucat/pink, terhalang, cahaya berbeda)
 - [ ] Tambah data latih/test jeruk eksternal
-- [ ] Selesaikan perbandingan CNN 25 epoch penuh (opsional)
+- [x] Perbandingan CNN 25 epoch penuh vs MobileNetV3
 - [ ] Ekspor model final v2 ke TFLite
 - [ ] Deteksi multi-buah + klasifikasi per buah
 

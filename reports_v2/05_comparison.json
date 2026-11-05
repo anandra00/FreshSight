@@ -6,70 +6,70 @@
   "comparison": [
     {
       "model": "CNN baseline",
-      "accuracy": 0.9608,
-      "macro_f1": 0.8952,
-      "weighted_f1": 0.9614,
+      "accuracy": 0.9924,
+      "macro_f1": 0.9846,
+      "weighted_f1": 0.9924,
       "params": 423526,
       "size_mb": 5.16,
-      "infer_ms": 14.53,
-      "ci95_low": 0.9337534681311999,
-      "ci95_high": 0.9764897579734241
+      "infer_ms": 16.9,
+      "ci95_low": 0.9859907642302205,
+      "ci95_high": 0.9975927989414305
     },
     {
       "model": "mobilenetv3small",
-      "accuracy": 0.9913,
-      "macro_f1": 0.986,
-      "weighted_f1": 0.9913,
+      "accuracy": 0.9924,
+      "macro_f1": 0.991,
+      "weighted_f1": 0.9924,
       "params": 942582,
       "size_mb": 4.34,
-      "infer_ms": 9.82,
-      "ci95_low": 0.9836782171927438,
-      "ci95_high": 0.997334036939314
+      "infer_ms": 11.98,
+      "ci95_low": 0.9853897404731358,
+      "ci95_high": 0.9982426846496911
     }
   ],
   "errors": {
-    "cnn": 36,
-    "mobilenetv3": 8,
-    "both": 5,
-    "only_cnn": 31,
+    "cnn": 7,
+    "mobilenetv3": 7,
+    "both": 4,
+    "only_cnn": 3,
     "only_mobilenetv3": 3,
-    "jaccard": 0.1282051282051282
+    "jaccard": 0.4
   },
   "f1_per_class": [
     {
       "label": "fresh_apple",
-      "CNN baseline": 0.955,
+      "CNN baseline": 0.994,
       "MobileNetV3": 0.996,
       "support": 237.0
     },
     {
       "label": "rotten_apple",
-      "CNN baseline": 0.596,
-      "MobileNetV3": 0.962,
+      "CNN baseline": 0.943,
+      "MobileNetV3": 0.981,
       "support": 26.0
     },
     {
       "label": "fresh_banana",
-      "CNN baseline": 0.992,
+      "CNN baseline": 0.995,
       "MobileNetV3": 0.992,
       "support": 316.0
     },
     {
       "label": "rotten_banana",
-      "CNN baseline": 0.987,
+      "CNN baseline": 0.991,
       "MobileNetV3": 0.982,
       "support": 113.0
     },
     {
       "label": "fresh_orange",
-      "CNN baseline": 0.981,
+      "CNN baseline": 0.994,
       "MobileNetV3": 0.994,
       "support": 177.0
     },
     {
       "label": "rotten_orange",
-      "CNN baseline": 0.86,
-      "MobileNetV3": 0.99,
+      "CNN baseline": 0.99,
+      "MobileNetV3": 1.0,
       "support": 49.0
     }
   ]
