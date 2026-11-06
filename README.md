@@ -85,6 +85,29 @@ Proyek ini menggabungkan:
 Sisa **10 error eksternal** semuanya `fresh_apple → rotten_apple`; gap domain/warna apel
 masih menjadi keterbatasan utama.
 
+### Bentuk model final vs CNN baseline
+
+**Model final** — `models_v2/mobilenetv3small_external_recalibrated.keras`:
+
+```text
+Input 224 × 224 × 3 (skala 0–1)
+  → Rescaling(2, −1)
+  → MobileNetV3Small (ImageNet) → 7 × 7 × 576
+  → GlobalAveragePooling2D → 576
+  → Dense(6, softmax)
+```
+
+Total **942.582 parameter**. Backbone sudah melewati stage 1/2 dan external fine-tune;
+head final adalah linear classifier 6 kelas. Internal 98,91%, external 97,09%.
+
+**CNN baseline** — `models_v2/cnn_baseline.keras`:
+
+- dilatih **dari nol** pada clean split, **423.526 parameter**;
+- **hanya pembanding**: bukan bagian model final, bukan external fine-tune, bukan ensemble;
+- 99,24% internal / macro F1 0,985 / 7 error;
+- MobileNet juga 99,24% / macro F1 0,991 / 7 error (4 error sama, 3 unik masing-masing);
+  MobileNet dipilih final karena F1 lebih tinggi, model lebih kecil, dan lebih cepat.
+
 > **Angka historis v1** (CNN 99,60% / MobileNet 99,20% / eksternal 90,99%) berasal dari
 > split lama 997 objek level gambar dan **tidak sebanding** dengan hasil v2 level crop.
 > Angka tersebut hanya disimpan sebagai konteks.
