@@ -1,0 +1,51 @@
+{
+  "model": "models_v2/mobilenetv3small_external_recalibrated.keras",
+  "test": "internal clean split, orange only",
+  "n": 226,
+  "support": {
+    "fresh_orange": 177,
+    "rotten_orange": 49
+  },
+  "accuracy": 0.995575221238938,
+  "macro_f1": 0.9985835694050991,
+  "weighted_f1": 0.9977813432274562,
+  "macro_precision": 1.0,
+  "macro_recall": 0.9971751412429379,
+  "per_class": {
+    "fresh_orange": {
+      "precision": 1.0,
+      "recall": 0.9943502824858758,
+      "f1-score": 0.9971671388101983,
+      "support": 177
+    },
+    "rotten_orange": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 49
+    }
+  },
+  "confusion_matrix": [
+    [
+      176,
+      0
+    ],
+    [
+      0,
+      49
+    ]
+  ],
+  "classes_order": [
+    "fresh_orange",
+    "rotten_orange"
+  ],
+  "errors": [
+    {
+      "filename": "1487.jpg",
+      "label6": "fresh_orange",
+      "pred_label": "fresh_apple",
+      "confidence": 0.555042028427124,
+      "crop_path": "data/crops/all/fresh_orange/1487__00643.jpg"
+    }
+  ]
+}
