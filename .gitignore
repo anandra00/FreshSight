@@ -2,6 +2,7 @@ data/crops/
 materials/dataset/
 __pycache__/
 *.pyc
+.commandcode/
 data/crops_external/
 models_v2/*_stage*.keras
 reports_v2/09_v2_head_features.npz
